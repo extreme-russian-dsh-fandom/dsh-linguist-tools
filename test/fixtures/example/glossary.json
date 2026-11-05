@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "description": "Synthetic terminology for the dsh-linguist-tools examples. Terms are invented for a generic measurement application.",
+  "terms": [
+    {
+      "term": "probe",
+      "note": "Measuring probe (head plus styli), not the verb.",
+      "ru": {
+        "translation": "щуп",
+        "match": "щуп\\w*",
+        "variants": [
+          "зонд"
+        ]
+      },
+      "zh": {
+        "translation": "测头",
+        "avoid": [
+          "探头"
+        ]
+      },
+      "exceptions": [
+        "95d92365"
+      ]
+    },
+    {
+      "term": "probe head",
+      "ru": {
+        "translation": "головка",
+        "match": "головк\\w*"
+      },
+      "zh": {
+        "translation": "测座"
+      }
+    },
+    {
+      "term": "alignment",
+      "ru": {
+        "translation": "выравнивание",
+        "match": "выравниван\\w*"
+      },
+      "zh": {
+        "translation": "对齐"
+      }
+    },
+    {
+      "term": "tolerance",
+      "ru": {
+        "translation": "допуск",
+        "match": "допуск\\w*"
+      },
+      "zh": {
+        "translation": "公差",
+        "avoid": [
+          "容差"
+        ]
+      }
+    },
+    {
+      "term": "report",
+      "ru": {
+        "translation": "отчёт",
+        "match": "отчёт\\w*|отчет\\w*"
+      },
+      "zh": {
+        "translation": "报告"
+      }
+    },
+    {
+      "term": "offset",
+      "ru": {
+        "translation": "смещение",
+        "match": "смещени\\w*"
+      },
+      "zh": {
+        "translation": "偏移"
+      }
+    },
+    {
+      "term": "offset",
+      "contexts": "Report",
+      "note": "A printed report uses \"отступ\" for a layout offset.",
+      "ru": {
+        "translation": "отступ",
+        "match": "отступ\\w*"
+      },
+      "zh": {
+        "translation": "偏移"
+      }
+    },
+    {
+      "term": "snapshot",
+      "status": "proposed",
+      "note": "The project has not decided between снимок and слепок yet.",
+      "ru": {
+        "translation": "снимок",
+        "match": "снимок\\w*",
+        "variants": [
+          "слепок"
+        ]
+      },
+      "zh": {
+        "translation": "快照"
+      }
+    }
+  ]
+}

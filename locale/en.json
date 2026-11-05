@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Qt Linguist Tools",
+    "description": "Inspect, translate, review, and lint Qt Linguist .ts translation files, with optional terminology glossaries."
+  }
+}

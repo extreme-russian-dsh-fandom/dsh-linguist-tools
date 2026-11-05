@@ -1,0 +1,36 @@
+{
+  "name": "dsh-linguist-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Inspect, translate, review, and lint Qt Linguist .ts translation files through DSH tools.",
+  "license": "BSD-2-Clause",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib/",
+    "tools/",
+    "locale/*.json",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "README.ru.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test --experimental-test-isolation=none \"test/*.test.mjs\"",
+    "fixtures": "node scripts/generate-fixtures.mjs"
+  }
+}

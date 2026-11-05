@@ -1,0 +1,6 @@
+# dsh-linguist-tools bundle patch: inserts the Host row that registers the
+# qt_ts_* tools and the qt-linguist skill. The plugin has no runtime
+# dependencies and never invokes Python, lupdate, or lrelease.
+- insert:
+    - id: dsh-linguist-tools
+      name: dsh-linguist-tools

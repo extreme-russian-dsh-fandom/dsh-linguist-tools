@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsDialog</class>
+ <widget class="QDialog" name="SettingsDialog">
+  <widget class="QLabel" name="alignmentLabel">
+   <property name="text">
+    <string>Alignment</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="probeLabel">
+   <property name="text">
+    <string>Probe head diameter</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="toleranceLabel">
+   <property name="text">
+    <string>Tolerance zone</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="offsetLabel">
+   <property name="text">
+    <string>Offset</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="applyButton">
+   <property name="text">
+    <string>&amp;Apply</string>
+   </property>
+  </widget>
+ </widget>
+</ui>

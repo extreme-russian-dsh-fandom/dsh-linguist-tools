@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Qt Linguist 工具",
+    "description": "检查、翻译、审校并校验 Qt Linguist .ts 翻译文件，支持可选的术语表。"
+  }
+}

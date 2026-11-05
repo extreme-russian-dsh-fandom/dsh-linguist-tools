@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Qt Linguist tools">
+  <rect x="1" y="1" width="30" height="30" rx="8" fill="#2563eb"/>
+  <circle cx="16" cy="14.5" r="8.5" fill="none" stroke="#ffffff" stroke-width="1.7"/>
+  <ellipse cx="16" cy="14.5" rx="3.9" ry="8.5" fill="none" stroke="#ffffff" stroke-width="1.4" opacity="0.9"/>
+  <path d="M7.5 14.5h17M8.8 9.9h14.4M8.8 19.1h14.4" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.75" stroke-linecap="round"/>
+  <path d="M18.5 26.5h-8.2a2.8 2.8 0 0 1-2.8-2.8v-.9a2.8 2.8 0 0 1 2.8-2.8h1.2" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round"/>
+  <circle cx="23.5" cy="24" r="1.5" fill="#ffffff"/>
+</svg>
