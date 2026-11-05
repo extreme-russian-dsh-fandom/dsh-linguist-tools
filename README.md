@@ -155,6 +155,9 @@ their locations at `test/fixtures/src/` so code excerpts work. Regenerate them
 with `node scripts/generate-fixtures.mjs`; the `edge/` fixtures cover
 unsupported constructs, merge conflicts, and formatting drift.
 
+CI runs the same suite on Node.js 22 for every push and pull request
+(`.github/workflows/ci.yml`).
+
 ## Limits
 
 - The writer reproduces the constructs `lupdate` writes. Unknown elements,

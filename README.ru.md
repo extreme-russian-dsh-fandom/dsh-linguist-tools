@@ -159,6 +159,9 @@ node --test --experimental-test-isolation=none "test/*.test.mjs"
 `edge/` покрывают неподдерживаемые конструкции, конфликты слияния и отклонения
 форматирования.
 
+CI запускает тот же набор тестов на Node.js 22 при каждом push и pull request
+(`.github/workflows/ci.yml`).
+
 ## Ограничения
 
 - Запись воспроизводит конструкции, которые создаёт `lupdate`. Неизвестные
