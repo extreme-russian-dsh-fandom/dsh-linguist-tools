@@ -332,7 +332,6 @@ function buildEdge() {
     version: '2.1',
     language: 'de_DE',
     sourceLanguage: 'en',
-    newline: '\r\n',
     dependencies: ['qtbase_de.qm'],
     extras: [['poedit', '1']],
   });

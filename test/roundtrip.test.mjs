@@ -25,10 +25,11 @@ for (const filePath of FIXTURES) {
   });
 }
 
-test('preserves CRLF, declarations, dependencies, and extras', async () => {
+test('preserves declarations, dependencies, extras, and checkout newline', async () => {
   const bytes = await readFile(path.join(EDGE_DIR, 'edge_ru.ts'));
   const document = parseBytes(bytes, 'edge_ru.ts');
-  assert.equal(document.newline, '\r\n');
+  const expectedNewline = bytes.includes(0x0d) ? '\r\n' : '\n';
+  assert.equal(document.newline, expectedNewline);
   assert.equal(document.language, 'de_DE');
   assert.deepEqual(document.dependencies, ['qtbase_de.qm']);
   assert.deepEqual(document.extras, [['poedit', '1']]);
@@ -44,4 +45,15 @@ test('preserves CRLF, declarations, dependencies, and extras', async () => {
   const plural = messages.find((message) => message.numerus);
   assert.deepEqual(plural.numerusForms, ['%n Kante', '%n Kanten']);
   assert.equal(messages.filter((message) => message.translationType === 'vanished').length, 1);
+});
+
+test('handles CRLF independently of checkout settings', async () => {
+  const source = await readFile(path.join(EXAMPLE_DIR, 'example_ru.ts'), 'utf8');
+  const lf = source.replaceAll('\r\n', '\n');
+  const crlf = lf.replaceAll('\n', '\r\n');
+  const document = parseBytes(Buffer.from(crlf, 'utf8'), 'inline-crlf.ts');
+  assert.equal(document.newline, '\r\n');
+  assert.deepEqual(document.writeBlockers, []);
+  assert.equal(document.formatDrift, null);
+  assert.equal(serialize(document), crlf);
 });
